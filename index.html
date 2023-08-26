@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/adaptive.css">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -16,7 +17,7 @@
 <body>
   <header>
     <div class="container">
-      <div class="row">
+      <div class="header__row">
         <div class="logo">
           <p class="logo__text">NFCKEY</p>
         </div>
@@ -47,16 +48,17 @@
             </div>
           </div>
         </div>
-        <div class="menu__action">
-          <div class="menu__button">
-            <div class="menu__button__base">
-              <a href="#" class="menu__button__base__text h50-16-medium">Войти</a>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path
-                  d="M12.5 2.5H15.8333C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H12.5M8.33333 14.1667L12.5 10M12.5 10L8.33333 5.83333M12.5 10H2.5"
-                  stroke="#5A6475" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
+        <div class="menu__content">
+          <div class="menu__action">
+            <div class="menu__button">
+              <div class="menu__button__base menu__button__base-disabled">
+                <a href="#" class="menu__button__base__text menu__button__base__text-disabled h50-16-medium">Войти</a>
+                <img src="images/login-disabled.svg" alt="Войти">
+              </div>
             </div>
+          </div>
+          <div class="menu__wrap-button">
+            <img src="images/menu.svg" alt="Меню">
           </div>
         </div>
       </div>
@@ -68,29 +70,25 @@
       <div class="hero__gradient__ellipse1"></div>
       <div class="hero__gradient__ellipse2"></div>
     </div>
-    <div class="hero-section">
+    <div class="hero">
       <div class="container">
-        <div class="hero-section-row">
-          <div class="column">
+        <div class="hero__row">
+          <div class="hero__column">
             <div class="content">
-              <p class="hero-section__heading h600-56-semibold">Ваше будущее <br> без ключей начинается здесь</p>
-              <p class="hero-section__subheading para-medium-regular">Дверные замки с технологией NFC. Доступ без усилий
+              <p class="hero__heading h600-56-semibold">Ваше будущее<br> без ключей<br> начинается здесь</p>
+              <p class="hero__subheading para-medium-regular">Дверные замки с технологией NFC. Доступ без усилий
                 и полный контроль – новое определение того, как вы открываете двери</p>
             </div>
-            <div class="action">
-              <div class="button">
-                <div class="button__base hero-section__button">
-                  <a href="#" class="hero-section__button__text h50-16-medium">Будьте в числе первых</a>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M4.16699 9.99984H15.8337M15.8337 9.99984L10.0003 4.1665M15.8337 9.99984L10.0003 15.8332"
-                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </div>
-              </div>
+            <div class="button__base hero__button">
+              <a href="#" class="hero__button__text h50-16-medium">Будьте в числе первых</a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M4.16699 9.99984H15.8337M15.8337 9.99984L10.0003 4.1665M15.8337 9.99984L10.0003 15.8332"
+                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </div>
           </div>
-          <div class="hero-section__image-container">
-            <img class="hero-section__image-container__image" src="images/hero-image.png"
+          <div class="hero__image-container">
+            <img class="hero__image-container__image" src="images/hero-image.png"
               alt="Замок NFCKEY и мобильное приложение">
           </div>
         </div>
@@ -99,16 +97,26 @@
   </section>
 
   <section id="advantages">
-    <div class="advantages__container">
-      <div class="advantages__row">
+    <div class="container">
+      <div class="row">
         <div class="subtitle-ca">
           <div class="subtitle-ca__content">
             <p class="subtitle-ca__content__title h400-40-semibold">Открывайте двери одним касанием вашего смартфона</p>
             <p class="subtitle-ca__content__text para-medium-regular">Расширяем возможности удобства и безопасности
-              <br>для частных лиц и предприятий</p>
+              <br id="adv__br">для частных лиц и предприятий</p>
+            <div class="subtitle-ca__content__action">
+              <div class="subtitle-ca__content__action__button">
+                <div class="subtitle-ca__content__action__button__base">
+                  <a class="subtitle-ca__content__action__button__base__text h50-16-medium" href="#">Узнать другие преимущества</a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M4.66699 10.0001H16.3337M16.3337 10.0001L10.5003 4.16675M16.3337 10.0001L10.5003 15.8334" stroke="#66C3D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="advantages__column">
+        <div class="column column__features">
           <div class="feature-column">
             <div class="feature-column__content">
               <div class="icon-big">
@@ -157,8 +165,56 @@
                 режиме реального времени, чтобы быть спокойным за безопасность помещения</p>
             </div>
           </div>
+          <div class="feature-column">
+            <div class="feature-column__content">
+              <div class="icon-big">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M4.99992 12.5498C6.97649 10.9035 9.46753 10.0019 12.0399 10.0019C14.6123 10.0019 17.1034 10.9035 19.0799 12.5498M1.41992 8.99979C4.34234 6.42376 8.10422 5.00244 11.9999 5.00244C15.8956 5.00244 19.6575 6.42376 22.5799 8.99979M8.52992 16.1098C9.54512 15.3885 10.7596 15.001 12.0049 15.001C13.2502 15.001 14.4647 15.3885 15.4799 16.1098M11.9999 19.9998H12.0099"
+                    stroke="#66C3D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <div class="feature-column__content">
+              <p class="feature-column__content__title h50-16-medium">Дистанционное управление</p>
+              <p class="feature-column__content__text para-xsmall-regular">Легко предоставляйте удаленный доступ
+                посетителям и гибко управляйте расписанием и временем доступа к замку </p>
+            </div>
+          </div>
+          <div class="feature-column">
+            <div class="feature-column__content">
+              <div class="icon-big">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M4.17241 2H13.5517C15.2619 2 16.9021 2.57946 18.1113 3.61091C19.3206 4.64236 20 6.04131 20 7.5C20 8.95869 19.3206 10.3576 18.1113 11.3891C16.9021 12.4205 15.2619 13 13.5517 13H6.51724V14.2H15.4276V16.2H6.51724V22H4.17241V16.2H3V14.2H4.17241V13H3V11H4.17241V2ZM6.51724 4H13.5517C14.64 4 15.6838 4.36875 16.4533 5.02513C17.2228 5.6815 17.6552 6.57174 17.6552 7.5C17.6552 8.42826 17.2228 9.3185 16.4533 9.97487C15.6838 10.6313 14.64 11 13.5517 11H6.51724V4Z"
+                    fill="#66C3D0" />
+                </svg>
+              </div>
+            </div>
+            <div class="feature-column__content">
+              <p class="feature-column__content__title h50-16-medium">Сокращение затрат на обслуживание</p>
+              <p class="feature-column__content__text para-xsmall-regular">Долговечная и надежная система электронных
+                замков позволяет свести к минимуму затраты на обслуживание</p>
+            </div>
+          </div>
+          <div class="feature-column">
+            <div class="feature-column__content">
+              <div class="icon-big">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M20.8401 4.60987C20.3294 4.09888 19.7229 3.69352 19.0555 3.41696C18.388 3.14039 17.6726 2.99805 16.9501 2.99805C16.2276 2.99805 15.5122 3.14039 14.8448 3.41696C14.1773 3.69352 13.5709 4.09888 13.0601 4.60987L12.0001 5.66987L10.9401 4.60987C9.90843 3.57818 8.50915 2.99858 7.05012 2.99858C5.59109 2.99858 4.19181 3.57818 3.16012 4.60987C2.12843 5.64156 1.54883 7.04084 1.54883 8.49987C1.54883 9.95891 2.12843 11.3582 3.16012 12.3899L4.22012 13.4499L12.0001 21.2299L19.7801 13.4499L20.8401 12.3899C21.3511 11.8791 21.7565 11.2727 22.033 10.6052C22.3096 9.93777 22.4519 9.22236 22.4519 8.49987C22.4519 7.77738 22.3096 7.06198 22.033 6.39452C21.7565 5.72706 21.3511 5.12063 20.8401 4.60987Z"
+                    stroke="#66C3D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <div class="feature-column__content">
+              <p class="feature-column__content__title h50-16-medium">Ориентированность на пользователей</p>
+              <p class="feature-column__content__text para-xsmall-regular">Мы создаем замки с учетом потребностей
+                пользователей, обеспечивая бесперебойный, удобный и безопасный доступ</p>
+            </div>
+          </div>
         </div>
-        <div class="advantages__column">
+        <div class="column column-2">
           <div class="feature-column">
             <div class="feature-column__content">
               <div class="icon-big">
@@ -583,7 +639,7 @@
       </div>
     </div>
   </footer>
-  <script>
+  <!-- <script>
     ScrollReveal().reveal('.subtitle-ca', { delay: 300 });
     ScrollReveal().reveal('.subtitle-la', { delay: 300 });
     ScrollReveal().reveal('.feature-column', { delay: 300 });
@@ -592,6 +648,6 @@
     ScrollReveal().reveal('.team__column', { delay: 300 });
     ScrollReveal().reveal('.testimonial__content', { delay: 300 });
     ScrollReveal().reveal('.testimonial__image', { delay: 300 });
-  </script>
+  </script> -->
 </body>
 </html>
