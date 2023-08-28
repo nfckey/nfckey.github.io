@@ -19,7 +19,20 @@
     <div class="container">
       <div class="header__row">
         <div class="logo">
-          <p class="logo__text">NFCKEY</p>
+          <a href="/" class="logo__text">NFCKEY</a>
+        </div>
+        <div class="menu__content">
+          <div class="menu__action">
+            <div class="menu__button">
+              <div class="menu__button__base disabled">
+                <a class="menu__button__base__text disabled h50-16-medium">Войти</a>
+                <img src="images/login-disabled.svg" alt="Войти">
+              </div>
+            </div>
+          </div>
+          <div class="menu__wrap-button">
+            <img src="images/menu.svg" alt="Меню" class="menu__wrap-button__image">
+          </div>
         </div>
         <div class="menu">
           <div class="menu__link">
@@ -48,19 +61,6 @@
             </div>
           </div>
         </div>
-        <div class="menu__content">
-          <div class="menu__action">
-            <div class="menu__button">
-              <div class="menu__button__base menu__button__base-disabled">
-                <a href="#" class="menu__button__base__text menu__button__base__text-disabled h50-16-medium">Войти</a>
-                <img src="images/login-disabled.svg" alt="Войти">
-              </div>
-            </div>
-          </div>
-          <div class="menu__wrap-button">
-            <img src="images/menu.svg" alt="Меню">
-          </div>
-        </div>
       </div>
     </div>
   </header>
@@ -75,14 +75,14 @@
         <div class="hero__row">
           <div class="hero__column">
             <div class="content">
-              <p class="hero__heading h600-56-semibold">Ваше будущее<br> без ключей<br> начинается здесь</p>
+              <h1 class="hero__heading h600-56-semibold">Ваше будущее<br> без ключей<br> начинается здесь</h1>
               <p class="hero__subheading para-medium-regular">Дверные замки с технологией NFC. Доступ без усилий
                 и полный контроль – новое определение того, как вы открываете двери</p>
             </div>
-            <div class="button__base hero__button">
-              <a href="#" class="hero__button__text h50-16-medium">Будьте в числе первых</a>
+            <a href="#" class="hero__button">
+              <p class="hero__button__text h50-16-medium">Будьте в числе первых</p>
               <img src="images/arrow-right-white.svg" alt="Стрелка вправо">
-            </div>
+            </a>
           </div>
           <div class="hero__image-container">
             <img class="hero__image-container__image" src="images/hero-image.webp"
@@ -98,7 +98,7 @@
       <div class="row">
         <div class="subtitle-ca">
           <div class="subtitle-ca__content">
-            <p class="subtitle-ca__content__title h400-40-semibold">Открывайте двери одним касанием вашего смартфона</p>
+            <h2 class="subtitle-ca__content__title h400-40-semibold">Открывайте двери одним касанием вашего смартфона</h2>
             <p class="subtitle-ca__content__text para-medium-regular">Расширяем возможности удобства и безопасности
               <br id="adv__br">для частных лиц и предприятий</p>
             <div class="subtitle-ca__content__action">
@@ -195,7 +195,7 @@
         <div class="features__column">
           <div class="subtitle-la">
             <div class="subtitle-la__content">
-              <p class="subtitle-la__content__title h400-40-semibold">Откройте новые возможности с помощью умных замков</p>
+              <h2 class="subtitle-la__content__title h400-40-semibold">Откройте новые возможности с помощью умных замков</h2>
               <p class="subtitle-la__content__text para-medium-regular">Замки NFCKEY созданы для того, чтобы легко интегрироваться в ваш образ жизни, предлагая набор особенностей, которые переопределяют удобство, безопасность и контроль</p>
             </div>
           </div>
@@ -250,7 +250,7 @@
       <div class="row">
         <div class="subtitla-ca">
           <div class="subtitle-ca__content">
-            <p class="subtitle-ca__content__title h400-40-semibold">Получите ясность о решении NFCKEY в подробном разделе FAQ</p>
+            <h2 class="subtitle-ca__content__title h400-40-semibold">Получите ясность о решении NFCKEY в подробном разделе FAQ</h2>
             <p class="subtitle-ca__content__text para-medium-regular">Изучите раздел с часто задаваемыми вопросами, чтобы узнать, как NFCKEY может органично вписаться в ваш образ жизни</p>
             <div class="subtitle-ca__content__action">
               <div class="subtitle-ca__content__action__button">
@@ -266,30 +266,30 @@
           <div class="faq__content">
             <div class="faq__content__question">
               <p class="faq__content__question__text para-medium-medium">Как работает система замков NFCKEY?</p>
-              <img src="images/chevron-up.svg" alt="Шеврон">
+              <img src="images/chevron-down.svg" alt="Шеврон" class="chevron">
             </div>
             <p class="faq__content__answer para-small-regular">В основе работы замка и мобильного приложения лежит технология NFC, которая инициализирует безопасный обмен данными при приближении устройства. После проверки зашифрованного цифрового ключа и всех необходимых разрешений механизм замка открывает дверь.</p>
           </div>
           <div class="faq__content">
             <div class="faq__content__question">
               <p class="faq__content__question__text para-medium-medium">Как NFCKEY обеспечивает безопасность моего помещения?</p>
-              <img src="images/chevron-down.svg" alt="Шеврон">
+              <img src="images/chevron-down.svg" alt="Шеврон" class="chevron">
             </div>
-            <p class="d-none faq__content__answer para-small-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ullam, consequuntur sed laboriosam tenetur libero officia porro excepturi! Odio deleniti ab dolor debitis sequi eligendi, inventore itaque alias unde nobis?</p>
+            <p class="faq__content__answer para-small-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ullam, consequuntur sed laboriosam tenetur libero officia porro excepturi! Odio deleniti ab dolor debitis sequi eligendi, inventore itaque alias unde nobis?</p>
           </div>
           <div class="faq__content">
             <div class="faq__content__question">
               <p class="faq__content__question__text para-medium-medium">Как мне начать пользоваться системой NFCKEY?</p>
-              <img src="images/chevron-down.svg" alt="Шеврон">
+              <img src="images/chevron-down.svg" alt="Шеврон" class="chevron">
             </div>
-            <p class="d-none faq__content__answer para-small-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ullam, consequuntur sed laboriosam tenetur libero officia porro excepturi! Odio deleniti ab dolor debitis sequi eligendi, inventore itaque alias unde nobis?</p>
+            <p class="faq__content__answer para-small-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ullam, consequuntur sed laboriosam tenetur libero officia porro excepturi! Odio deleniti ab dolor debitis sequi eligendi, inventore itaque alias unde nobis?</p>
           </div>
           <div class="faq__content">
             <div class="faq__content__question">
               <p class="faq__content__question__text para-medium-medium">Можно ли устанавливать замки NFCKEY в различные типы дверей?</p>
-              <img src="images/chevron-down.svg" alt="Шеврон">
+              <img src="images/chevron-down.svg" alt="Шеврон" class="chevron">
             </div>
-            <p class="d-none faq__content__answer para-small-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ullam, consequuntur sed laboriosam tenetur libero officia porro excepturi! Odio deleniti ab dolor debitis sequi eligendi, inventore itaque alias unde nobis?</p>
+            <p class="faq__content__answer para-small-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ullam, consequuntur sed laboriosam tenetur libero officia porro excepturi! Odio deleniti ab dolor debitis sequi eligendi, inventore itaque alias unde nobis?</p>
           </div>
         </div>
       </div>
@@ -301,7 +301,7 @@
       <div class="row">
         <div class="subtitle-ca">
           <div class="subtitle-ca__content">
-            <p class="subtitle-ca__content__subheading h50-16-medium">Наша команда</p>
+            <h2 class="subtitle-ca__content__subheading h50-16-medium">Наша команда</h2>
             <p class="subtitle-ca__content__title h400-40-semibold">Воплощаем инновации в жизнь</p>
           </div>
         </div>
@@ -442,7 +442,7 @@
       <div class="row">
         <div class="testimonial__content">
           <img src="images/ya-v-dele-logo.webp" alt="Логотип конкурса 'Я в деле'" class="testimonial__content__logo">
-          <p class="testimonial__content__text h300-32-medium">Наша команда заняла <span class="testimonial__content__text__span">третье место</span> среди всех <br id="test__br">проектов Москвы в треке «инновации» <br id="test__br"><span class="testimonial__content__text__span">крупнейшего</span> в России федерального <br id="test__br">конкурса предпринимателей <br id="test__br-yvd">«Я в деле»</p>
+          <h3 class="testimonial__content__text h300-32-medium">Наша команда заняла <span class="testimonial__content__text__span">третье место</span> среди всех <br id="test__br">проектов Москвы в треке «инновации» <br id="test__br"><span class="testimonial__content__text__span">крупнейшего</span> в России федерального <br id="test__br">конкурса предпринимателей <br id="test__br-yvd">«Я в деле»</h3>
         </div>
         <div class="testimonial__image-container">
           <img src="images/ya-v-dele-photo.webp" alt="Финалисты конкурса 'Я в деле'" class="testimonial__image-container__image">
@@ -451,11 +451,11 @@
     </div>
   </section>
 
-  <!-- <section id="cta">
+  <section id="cta">
     <div class="cta__container">
       <div class="subtitle-ca">
         <div class="subtitle-ca__content">
-          <p class="subtitle-ca__content__subheading h50-16-medium">Свяжитесь с нами</p>
+          <h2 class="subtitle-ca__content__subheading h50-16-medium">Свяжитесь с нами</h2>
           <p class="subtitle-ca__content__title h400-40-semibold">Готовы перейти на новый уровень? Зарезервируйте свой NFC-замок прямо сейчас</p>
         </div>
       </div>
@@ -468,34 +468,34 @@
         </div>
         <form class="cta__column">
             <div class="form-group">
-              <label for="name" class="h100-20-semibold">Имя</label>
-              <input type="text" name="name" id="name" class="form__input para-medium-regular" placeholder="Иван Иванов">
+              <label for="name" class="form-label h100-20-semibold">Имя</label>
+              <input type="text" name="name" id="name" class="form-input para-medium-regular" placeholder="Иван Иванов">
             </div>
             <div class="form-group">
-              <label for="email" class="h100-20-semibold">Email</label>
-              <input type="text" name="email" id="email" class="form__input para-medium-regular" placeholder="ivan.ivanov@gmail.com">
+              <label for="email" class="form-label h100-20-semibold">Email</label>
+              <input type="text" name="email" id="email" class="form-input para-medium-regular" placeholder="ivan.ivanov@gmail.com">
             </div>
             <div class="form-group">
-              <label for="phone" class="h100-20-semibold">Телефон</label>
-              <input type="text" name="phone" id="phone" class="form__input para-medium-regular" placeholder="+7 (968) 740-12-34">
+              <label for="phone" class="form-label h100-20-semibold">Телефон</label>
+              <input type="text" name="phone" id="phone" class="form-input para-medium-regular" placeholder="+7 (968) 740-12-34">
             </div>
             <div class="form-group">
-              <label for="comment" class="h100-20-semibold">Комментарий</label>
-              <textarea name="comment" id="comment" cols="30" rows="5" class="form__input form__textarea para-medium-regular" placeholder="Поделитесь своими вопросами или предпочтениями"></textarea>
+              <label for="comment" class="form-label h100-20-semibold">Комментарий</label>
+              <textarea name="comment" id="comment" cols="30" rows="5" class="form-input form-textarea para-medium-regular" placeholder="Поделитесь своими вопросами или предпочтениями"></textarea>
             </div>
-            <div class="form__button">
-              <a href="#" class="form__button__text h50-16-medium">Отправить</a>
-            </div>
+            <a href="#" class="form-button">
+              <p class="form-button__text h50-16-medium">Отправить</p>
+            </a>
         </form>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <footer>
     <div class="container">
       <div class="row footer__row">
         <div class="logo">
-          <p class="logo__text">NFCKEY</p>
+          <a href="/" class="logo__text">NFCKEY</a>
         </div>
         <div class="footer__content">
           <div class="footer__social-group">
@@ -514,6 +514,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/main.js"></script>
   <!-- <script>
     ScrollReveal().reveal('.subtitle-ca', { delay: 300 });
     ScrollReveal().reveal('.subtitle-la', { delay: 300 });

@@ -9,7 +9,7 @@ body {
     align-items: stretch;
 }
 
-p {
+p, h1, h2, h3, h4, h5 {
     margin: 0;
 }
 
@@ -79,17 +79,28 @@ header {
 .logo__text {
     color: var(--black);
     text-align: center;
+    text-decoration: none;
     font-family: Manrope;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: 32px; /* 133.333% */
+    transition: 0.3s ease;
+}
+
+.logo__text:where(:hover, :focus-visible) {
+    color: var(--pri-teal-400);
+    outline: none;
 }
 
 .menu {
     display: flex;
     align-items: flex-start;
     gap: 16px;
+}
+
+.menu-padding {
+    padding-top: 24px;
 }
 
 .menu__link {
@@ -110,14 +121,16 @@ header {
     color: var(--neutral-200);
     text-align: center;
     text-decoration: none;
-    background: linear-gradient(90deg, var(--pri-teal-400), slateblue) no-repeat right bottom / 0 2px;
+    background: linear-gradient(90deg, var(--pri-teal-400), slateblue) no-repeat right bottom / 0 1px;
     transition: background-size 350ms;
-    padding-bottom: 2px;
+    padding-bottom: 1px;
 }
 
 .menu__link__item__text:where(:hover, :focus-visible) {
-    background-size: 100% 2px;
+    background-size: 100% 1px;
     background-position-x: left;
+    color: var(--pri-teal-300);
+    outline: none;
 }
 
 .menu__content {
@@ -125,6 +138,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     gap: 16px;
+    order: 3;
 }
 
 .menu__action {
@@ -151,7 +165,7 @@ header {
     background: var(--neutral-1200);
 }
 
-.menu__button__base-disabled {
+.menu__button__base.disabled {
     background: var(--neutral-800);
 }
 
@@ -161,13 +175,15 @@ header {
     text-decoration: none;
 }
 
-.menu__button__base__text-disabled {
+.menu__button__base__text.disabled {
     color: var(--neutral-700);
+    cursor: default;
 }
 
 .menu__wrap-button {
     display: none;
     padding: 8px;
+    cursor: pointer;
 }
 
 /* ---------------------------------------- */
@@ -257,7 +273,18 @@ header {
     align-items: center;
     gap: 8px;
     border-radius: 8px;
-    background: #66C3D0;
+    background: var(--pri-teal-400);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.hero__button:hover {
+    background: var(--pri-teal-300);
+}
+
+.hero__button:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 2px var(--pri-teal-400), 0px 0px 0px 4px rgba(102, 195, 208, 0.10);
 }
 
 .hero__button__text {
@@ -417,6 +444,7 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     align-self: stretch;
+    cursor: pointer;
 }
 
 .faq__content__question__text {
@@ -426,7 +454,10 @@ header {
 
 .faq__content__answer {
     max-width: 626px;
+    max-height: 0;
     color: var(--neutral-400);
+    overflow: hidden;
+    transition: max-height 0.7s ease;
 }
 
 /* ---------------------------------------- */
@@ -512,6 +543,12 @@ header {
     display: flex;
     align-items: flex-start;
     gap: 12px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.team__avatar__socials__social:hover {
+    transform: scale(1.1);
 }
 
 /* ---------------------------------------- */
@@ -642,12 +679,12 @@ header {
     align-self: stretch;
 }
 
-.form__label {
+.form-label {
     align-self: stretch;
     color: var(--neutral-200);
 }
 
-.form__input {
+.form-input {
     display: flex;
     justify-content: space-between;
     height: 64px;
@@ -659,12 +696,17 @@ header {
     color: var(--neutral-50);
 }
 
-.form__textarea {
+.form-input:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 2px var(--pri-teal-400), 0px 0px 0px 4px rgba(102, 195, 208, 0.10);
+}
+
+.form-textarea {
     height: auto;
     padding: 12px 16px;
 }
 
-.form__button {
+.form-button {
     display: flex;
     width: 100%;
     box-sizing: border-box;
@@ -674,9 +716,20 @@ header {
     gap: 8px;
     border-radius: 8px;
     background: var(--pri-teal-400);
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-.form__button__text {
+.form-button:hover {
+    background: var(--pri-teal-300);
+}
+
+.form-button:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 2px var(--pri-teal-400), 0px 0px 0px 4px rgba(102, 195, 208, 0.10);
+}
+
+.form-button__text {
     color: var(--white);
     text-align: center;
     text-decoration: none;
@@ -719,6 +772,12 @@ footer {
     display: flex;
     align-items: flex-start;
     gap: 24px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.footer__social-group__social:hover {
+    transform: scale(1.1);
 }
 
 .footer__copyright {
@@ -791,6 +850,11 @@ footer {
     color: var(--pri-teal-400);
     text-align: center;
     text-decoration: none;
+}
+
+.subtitle-ca__content__action__button__base__text:where(:hover, :focus-visible) {
+    color: var(--pri-teal-300);
+    outline: none;
 }
 
 /* ---------------------------------------- */
