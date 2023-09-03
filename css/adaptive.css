@@ -102,8 +102,7 @@
 
 /* Media query for screens smaller than 954px */
 @media screen and (max-width: 953.98px) {
-    .cta__row {
-        flex-wrap: wrap;
+    .cta__form {
         gap: 64px
     }
 
@@ -114,6 +113,10 @@
     
     .cta__column {
         flex-basis: calc(50%);
+    }
+
+    #confirm {
+        padding-bottom: 36px;
     }
 }
 

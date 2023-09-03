@@ -63,3 +63,10 @@ function enableSmoothScrolling() {
     });
   });
 }
+
+function onFormSubmitted() {
+  document.getElementById('confirm').classList.remove('d-none');
+  document.getElementById('confirm').classList.add('cta__column');
+  document.getElementById('cta-form').classList.remove('cta__form');
+  document.getElementById('cta-form').classList.add('d-none');
+}
