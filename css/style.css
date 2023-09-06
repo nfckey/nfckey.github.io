@@ -462,10 +462,6 @@ header {
     transition: max-height 0.7s ease;
 }
 
-.faq__content__answer-ol {
-    margin: 0;
-}
-
 .neutral400 {
     color: var(--neutral-400);
 }
