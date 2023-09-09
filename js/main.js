@@ -11,38 +11,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
   enableSmoothScrolling();
 
-  const imageContainer = document.querySelector(".testimonial__image-container");
-  const zoomableImage = document.querySelector(".zoomable");
-  const overlay = document.getElementById("overlay");
-  const zoomedImage = document.querySelector(".zoomed-image");
+  // const imageContainer = document.querySelector(".testimonial__image-container");
+  // const zoomableImage = document.querySelector(".zoomable");
+  // const overlay = document.getElementById("overlay");
+  // const zoomedImage = document.querySelector(".zoomed-image");
   
-  imageContainer.addEventListener("click", () => {
-      openImage();
-  });
+  // imageContainer.addEventListener("click", () => {
+  //     openImage();
+  // });
   
-  overlay.addEventListener("click", () => {
-      closeImage();
-  });
+  // overlay.addEventListener("click", () => {
+  //     closeImage();
+  // });
   
-  zoomedImage.addEventListener("click", () => {
-      closeImage();
-  });
+  // zoomedImage.addEventListener("click", () => {
+  //     closeImage();
+  // });
   
-  zoomedImage.addEventListener("gesturechange", (event) => {
-      zoomedImage.style.transform = `scale(${event.scale})`;
-  });
+  // zoomedImage.addEventListener("gesturechange", (event) => {
+  //     zoomedImage.style.transform = `scale(${event.scale})`;
+  // });
   
-  function openImage() {
-      overlay.style.display = "flex";
-      zoomedImage.src = zoomableImage.src;
-      document.body.style.overflow = "hidden";
-  }
+  // function openImage() {
+  //     overlay.style.display = "flex";
+  //     zoomedImage.src = zoomableImage.src;
+  //     document.body.style.overflow = "hidden";
+  // }
   
-  function closeImage() {
-      overlay.style.display = "none";
-      zoomedImage.style.transform = "scale(1)";
-      document.body.style.overflow = "auto";
-  }
+  // function closeImage() {
+  //     overlay.style.display = "none";
+  //     zoomedImage.style.transform = "scale(1)";
+  //     document.body.style.overflow = "auto";
+  // }
 });
 
 function toggleMenu() {

@@ -1,3 +1,10 @@
+/* Media query for screens smaller than 1345px */
+@media screen and (max-width: 1344.98px) {
+    .swiper-container {
+        margin: 0;
+    }
+}
+
 /* Media query for screens smaller than 1280px */
 @media screen and (max-width: 1279.98px) {
     header {
@@ -194,6 +201,10 @@
     .testimonial__content__text {
         font-size: 20px;
         line-height: 24px; /* 120% */
+    }
+
+    .swiper-container {
+        padding: 0 16px;
     }
 
     .subtitle-ca {
