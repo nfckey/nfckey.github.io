@@ -125,6 +125,10 @@
     #confirm {
         padding-bottom: 36px;
     }
+
+    .footer__content .column {
+        gap: 0px;
+    }
 }
 
 /* Media query for screens smaller than 525px */
