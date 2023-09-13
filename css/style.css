@@ -663,8 +663,15 @@ header {
     object-fit: contain;
 }
 
+.swiper-slide video {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px; 
+}
+
 .thumbSwiper {
     height: 20%;
+    max-height: 312px;
     box-sizing: border-box;
     padding: 10px 0;
 }

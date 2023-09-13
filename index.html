@@ -518,19 +518,24 @@
   <div class="container swiper-container">
     <div class="swiper imgSwiper swiper-initialized swiper-horizontal swiper-backface-hidden">
       <div class="swiper-wrapper" id="swiper-wrapper-cebf5c5b219ea5d3" aria-live="polite">
-        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3">
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 4">
           <div class="swiper-zoom-container">
             <img src="images/ya-v-dele-team-1.webp" alt="Команда проекта на конкурсе 'Я в деле'">
           </div>
         </div>
-        <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 3" style="display: flex;">
+        <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 4" style="display: flex;">
           <div class="swiper-zoom-container">
             <img src="images/ya-v-dele-team-2.webp" alt="Команда проекта на конкурсе 'Я в деле'">
           </div>
         </div>
-        <div class="swiper-slide" role="group" aria-label="3 / 3" style="display: flex;">
+        <div class="swiper-slide" role="group" aria-label="3 / 4" style="display: flex;">
           <div class="swiper-zoom-container">
             <img src="images/ya-v-dele-certificate.webp" alt="Сертификат участника конкурса 'Я в деле'" style="max-height: 720px;">
+          </div>
+        </div>
+        <div class="swiper-slide" role="group" aria-label="4 / 4" style="display: flex;">
+          <div class="swiper-zoom-container">
+            <video src="images/ya-v-dele-video.mp4" preload="metadata" controls></video>
           </div>
         </div>
       </div>
@@ -540,15 +545,17 @@
       class="swiper thumbSwiper swiper-initialized swiper-horizontal swiper-free-mode swiper-watch-progress swiper-backface-hidden swiper-thumbs">
       <div class="swiper-wrapper" id="swiper-wrapper-477b3d23123cb5d5" aria-live="polite"
         style="transform: translate3d(0px, 0px, 0px);">
-        <div class="swiper-slide swiper-slide-visible swiper-slide-active swiper-slide-thumb-active" role="group"
-          aria-label="1 / 3">
+        <div class="swiper-slide swiper-slide-visible swiper-slide-active swiper-slide-thumb-active" role="group" aria-label="1 / 4">
           <img src="images/ya-v-dele-team-1.webp" alt="Команда проекта на конкурсе 'Я в деле'">
         </div>
-        <div class="swiper-slide swiper-slide-visible swiper-slide-next" role="group" aria-label="2 / 3">
+        <div class="swiper-slide swiper-slide-visible swiper-slide-next" role="group" aria-label="2 / 4">
           <img src="images/ya-v-dele-team-2.webp" alt="Команда проекта на конкурсе 'Я в деле'">
         </div>
-        <div class="swiper-slide swiper-slide-visible" role="group" aria-label="3 / 3">
-          <img src="images/ya-v-dele-certificate.webp" alt="Сертификат участника конкурса 'Я в деле'">
+        <div class="swiper-slide swiper-slide-visible" role="group" aria-label="3 / 4">
+          <img src="images/ya-v-dele-certificate-thumb.webp" alt="Сертификат участника конкурса 'Я в деле'">
+        </div>
+        <div class="swiper-slide swiper-slide-visible" role="group" aria-label="4 / 4">
+          <img src="images/ya-v-dele-video-thumb.webp" alt="Команда проекта на конкурсе 'Я в деле'">
         </div>
       </div>
       <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
@@ -819,7 +826,7 @@
   <script>
     var swiper = new Swiper(".thumbSwiper", {
       spaceBetween: 10,
-      slidesPerView: 3,
+      slidesPerView: 4,
       freeMode: true,
       watchSlidesProgress: true,
     });
@@ -830,6 +837,24 @@
       zoom: true,
       thumbs: {
         swiper: swiper,
+      },
+      on: {
+        transitionStart: function(){
+          
+          var videos = document.querySelectorAll('video');
+
+          Array.prototype.forEach.call(videos, function(video){
+            video.pause();
+          });
+        },
+        transitionEnd: function(){
+          
+          var activeIndex = this.activeIndex;
+          var activeSlide = document.getElementsByClassName('swiper-slide')[activeIndex];
+          var activeSlideVideo = activeSlide.getElementsByTagName('video')[0];
+          activeSlideVideo.play();
+        
+        },
       },
     });
   </script>
