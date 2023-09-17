@@ -284,7 +284,8 @@ header {
     background: var(--pri-teal-300);
 }
 
-.hero__button:focus {
+.hero__button:focus,
+.button-light:focus {
     outline: none;
     box-shadow: 0px 0px 0px 2px var(--pri-teal-400), 0px 0px 0px 4px rgba(102, 195, 208, 0.10);
 }
@@ -341,6 +342,12 @@ header {
     gap: 8px;
     border-radius: 8px;
     background: var(--pri-teal-900);
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button-light:hover {
+    background: var(--pri-teal-800);
 }
 
 .button-light__text {
@@ -1021,8 +1028,7 @@ footer {
     text-decoration: none;
 }
 
-.subtitle-ca__content__action__button__base__text:where(:hover, :focus-visible),
-.button-light__text:where(:hover, :focus-visible) {
+.subtitle-ca__content__action__button__base__text:where(:hover, :focus-visible) {
     color: var(--pri-teal-300);
     outline: none;
 }
