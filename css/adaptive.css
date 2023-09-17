@@ -239,7 +239,7 @@
 
 /* Media query for screens smaller than 864px */
 @media screen and (max-width: 863.98px) {
-    .advantage-column:nth-child(n+4) {
+    .adv_nth .advantage-column:nth-child(n+4) {
         display: none;
     }
 }
