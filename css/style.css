@@ -311,6 +311,45 @@ header {
 }
 
 /* ---------------------------------------- */
+/*               INFOGRAPHICS               */
+/* ---------------------------------------- */
+
+#infographics {
+    padding-bottom: 0;
+}
+
+.infographics-image-container {
+    max-width: 968px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.infographics-image-container__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.button-light {
+    display: flex;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: var(--pri-teal-900);
+}
+
+.button-light__text {
+    color: var(--pri-teal-300);
+    text-align: center;
+    text-decoration: none;
+}
+
+/* ---------------------------------------- */
 /*                ADVANTAGES                */
 /* ---------------------------------------- */
 
@@ -582,21 +621,6 @@ header {
 
 .testimonial__content__text__span {
     color: var(--pri-teal-400);
-}
-
-.testimonial__image-container {
-    max-width: 1280px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-}
-
-.testimonial__image-container__image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
 }
 
 .zoomable {
@@ -886,7 +910,7 @@ footer {
 .footer-contacts-column {
     display: flex;
     flex: 1;
-    max-width: 300px; /* Set the maximum width for each column */
+    max-width: 300px;
     padding: 16px;
     justify-content: center;
     align-items: center;
@@ -997,7 +1021,8 @@ footer {
     text-decoration: none;
 }
 
-.subtitle-ca__content__action__button__base__text:where(:hover, :focus-visible) {
+.subtitle-ca__content__action__button__base__text:where(:hover, :focus-visible),
+.button-light__text:where(:hover, :focus-visible) {
     color: var(--pri-teal-300);
     outline: none;
 }
