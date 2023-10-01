@@ -95,6 +95,14 @@ header {
     outline: none;
 }
 
+.logo-filter {
+    transition: filter 0.3s ease;
+}
+
+.logo-filter:hover {
+    filter: invert(72%) sepia(30%) saturate(593%) hue-rotate(139deg) brightness(95%) contrast(82%);
+}
+
 .menu {
     display: flex;
     align-items: flex-start;
@@ -124,7 +132,7 @@ header {
     text-align: center;
     text-decoration: none;
     background: linear-gradient(90deg, var(--pri-teal-400), var(--pri-teal-300)) no-repeat right bottom / 0 1px;
-    transition: background-size 350ms;
+    transition: background-size 350ms, color 300ms;
     padding-bottom: 1px;
 }
 
@@ -903,7 +911,7 @@ footer {
 }
 
 .footer__row {
-    gap: 8px !important;
+    gap: 24px !important;
 }
 
 .footer__content {
