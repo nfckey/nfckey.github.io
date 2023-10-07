@@ -1,6 +1,6 @@
 {
-    "name": "NFCKEY",
-    "short_name": "NFCKEY",
+    "name": "NFCKey",
+    "short_name": "NFCKey",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
