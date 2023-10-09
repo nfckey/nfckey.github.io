@@ -107,8 +107,19 @@
     }
 }
 
+/* Media query for screens smaller than 1187px */
+@media screen and (max-width: 1286.98px) {
+    .adv-row {
+        flex-wrap: wrap;
+    }
+}
+
 /* Media query for screens smaller than 954px */
 @media screen and (max-width: 953.98px) {
+    .faq-row-g90 {
+        flex-wrap: wrap;
+    }
+
     .cta__form {
         gap: 64px
     }
@@ -186,6 +197,18 @@
         align-self: stretch;
     }
 
+    .hero-ll__content__title {
+        font-size: 2.5rem; /* 40px */
+        font-weight: 600;
+        line-height: 48px;
+    }
+
+    .hero-ll__content__text {
+        font-size: 1rem; /* 16px */
+        font-weight: 400;
+        line-height: 28px;
+    }
+
     .advantage-column {
         padding: 16px 0;
     }
@@ -229,6 +252,7 @@
         line-height: 40px; /* 125% */
     }
 
+    .adv-card__content__text,
     .subtitle-ca__content__text,
     .subtitle-la__content__text {
         font-size: 1rem; /* 16px */
@@ -239,6 +263,10 @@
 
 /* Media query for screens smaller than 864px */
 @media screen and (max-width: 863.98px) {
+    #hero-ll {
+        padding: 0px 80px 0px 80px !important;
+    }
+
     .adv_nth .advantage-column:nth-child(n+4) {
         display: none;
     }
