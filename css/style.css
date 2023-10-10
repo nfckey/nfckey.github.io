@@ -375,13 +375,13 @@ header {
     align-items: center;
     gap: 8px;
     border-radius: 8px;
-    background: var(--pri-teal-900);
+    background: var(--pri-teal-900) !important;
     text-decoration: none;
     transition: background-color 0.3s;
 }
 
 .button-light:hover {
-    background: var(--pri-teal-800);
+    background: var(--pri-teal-800) !important;
 }
 
 .button-light__text {
@@ -580,10 +580,23 @@ header {
     border-radius: 16px;
     border: 1px solid var(--neutral-1300, #F1F1F2);
     background: var(--white, #FFF);
+    transition: transform 0.3s;
+}
+
+.sub-card:hover {
+    transform: scale(1.02);
 }
 
 .sub-card-light {
     border: 1px solid var(--pri-teal-800, #C7F3F9);
+}
+
+.sub-card-green {
+    border: 1px solid var(--success-600, #79B395);
+}
+
+.sub-card-gold {
+    border: 1px solid var(--warning-600, #EAC17F);
 }
 
 .sub-card__head {
@@ -595,6 +608,7 @@ header {
 }
 
 .sub-card__head-title {
+    line-height: 32px !important;
     color: var(--neutral-50, #121417);
     text-align: center;
     white-space: nowrap;
@@ -620,6 +634,16 @@ header {
     background: var(--pri-teal-900, #ECFBFD);
 }
 
+.badge-light-green {
+    border: 1px solid var(--success-600, #79B395);
+    background: var(--success-800, #D2E6DC);
+}
+
+.badge-light-gold {
+    border: 1px solid var(--warning-600, #EAC17F);
+    background: var(--warning-800, #F8EAD4);
+}
+
 .badge__text {
     color: var(--neutral-200, #363C46);
     text-align: center;
@@ -637,6 +661,14 @@ header {
 
 .delimiter-light {
     background: var(--pri-teal-800, #C7F3F9);
+}
+
+.delimiter-green {
+    background: var(--success-700, #a5ccb9);
+}
+
+.delimiter-gold {
+    background: var(--warning-700, #f1d6a9);
 }
 
 .bullet-points {
@@ -662,6 +694,14 @@ header {
     text-align: center;
 }
 
+.bullet-points__item__icon-green {
+    color: var(--success-600, #79B395);
+}
+
+.bullet-points__item__icon-gold {
+    color: var(--warning-600, #EAC17F);
+}
+
 .bullet-points__item__icon-wide {
     width: 34px;
     text-align: left;
@@ -685,6 +725,28 @@ header {
     background: var(--pri-teal-400, #66C3D0);
     text-decoration: none;
     transition: background-color 0.3s;
+}
+
+.button-green {
+    background: var(--success-600, #79B395);
+}
+.button-green:hover {
+    background: var(--success-500, #4C9972);
+}
+.button-green:focus {
+    background: var(--success-600, #79B395);
+    box-shadow: 0px 0px 0px 2px #79B395, 0px 0px 0px 4px rgba(121, 179, 149, 0.10);
+}
+
+.button-gold {
+    background: var(--warning-600, #EAC17F);
+}
+.button-gold:hover {
+    background: var(--warning-500, #E3AD54);
+}
+.button-gold:focus {
+    background: var(--warning-600, #EAC17F);
+    box-shadow: 0px 0px 0px 2px #EAC17F, 0px 0px 0px 4px rgba(234, 193, 127, 0.10);
 }
 
 .button-md__text {
