@@ -77,6 +77,14 @@
         flex-direction: column;
     }
 
+    .features__column {
+        align-items: center;
+    }
+
+    .pl-44 {
+        padding-left: 0px;
+    }
+
     .team__column {
         flex-wrap: wrap;
     }

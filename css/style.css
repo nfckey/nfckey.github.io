@@ -497,8 +497,12 @@ header {
     max-width: 1216px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 32px;
+}
+
+.pl-44 {
+    padding-left: 44px;
 }
 
 .features__feature {
@@ -541,6 +545,20 @@ header {
 .features__image-container__image {
     max-width: 100%;
     height: auto;
+}
+
+.features-container {
+    display: flex;
+    max-width: 1280px;
+    padding: 0px 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+
+.features-sla-text {
+    max-width: 480px !important;
 }
 
 /* ---------------------------------------- */
