@@ -103,3 +103,8 @@ function onFormSubmitted() {
   document.getElementById('cta-form').classList.remove('cta__form');
   document.getElementById('cta-form').classList.add('d-none');
 }
+
+function onSupFormSubmitted() {
+  document.getElementById('cta-form-sup').classList.remove('cta__form');
+  document.getElementById('cta-form-sup').classList.add('d-none');
+}

@@ -278,6 +278,15 @@
     .adv_nth .advantage-column:nth-child(n+4) {
         display: none;
     }
+
+    .cta__form {
+        width: 100%;
+    }
+
+    .cta__image-container {
+        width: auto;
+        order: 1;
+    }
 }
 
 /* Media query for screens smaller than 675px */
