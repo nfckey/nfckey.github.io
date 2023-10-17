@@ -454,7 +454,7 @@ header {
 .advantages-row {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 32px;
 }
 
