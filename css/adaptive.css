@@ -276,6 +276,11 @@
         font-size: 1.25rem;
         line-height: 24px;
     }
+
+    #business-max {
+        font-size: 1rem;
+        line-height: 24px;
+    }
 }
 
 /* Media query for screens smaller than 864px */

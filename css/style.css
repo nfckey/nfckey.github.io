@@ -627,20 +627,19 @@ header {
 
 .badges-group {
     margin: 32px 0;
-    height: 40px;
-    display: flex;
     padding: 8px;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
     border-radius: 240px;
     border: 1px solid var(--neutral-1000, #E6E7E9);
     background: var(--White, #FFF);
-    transition: all 0.2s ease-in;
     cursor: pointer;
 }
 
 .badge {
+    height: 20px;
     display: flex;
     padding: 4px 8px;
     justify-content: center;
@@ -678,8 +677,16 @@ header {
 .badge__text {
     color: var(--neutral-200, #363C46);
     text-align: center;
-    transition: all 0.2s ease-out;
 }
+
+@keyframes example {
+    from {
+        font-size: 0.875rem;
+    }
+    to {
+        font-size: 1rem;
+    }
+  }
 
 .badge__text-light {
     color: var(--pri-teal-400, #66C3D0);
