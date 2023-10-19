@@ -10,43 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
   enableSmoothScrolling();
-
-  // const imageContainer = document.querySelector(".testimonial__image-container");
-  // const zoomableImage = document.querySelector(".zoomable");
-  // const overlay = document.getElementById("overlay");
-  // const zoomedImage = document.querySelector(".zoomed-image");
-  
-  // imageContainer.addEventListener("click", () => {
-  //     openImage();
-  // });
-  
-  // overlay.addEventListener("click", () => {
-  //     closeImage();
-  // });
-  
-  // zoomedImage.addEventListener("click", () => {
-  //     closeImage();
-  // });
-  
-  // zoomedImage.addEventListener("gesturechange", (event) => {
-  //     zoomedImage.style.transform = `scale(${event.scale})`;
-  // });
-  
-  // function openImage() {
-  //     overlay.style.display = "flex";
-  //     zoomedImage.src = zoomableImage.src;
-  //     document.body.style.overflow = "hidden";
-  // }
-  
-  // function closeImage() {
-  //     overlay.style.display = "none";
-  //     zoomedImage.style.transform = "scale(1)";
-  //     document.body.style.overflow = "auto";
-  // }
 });
 
 function toggleMenu() {
-  const menu = document.querySelector(".menu");
   const menuImage = document.querySelector(".menu__wrap-button__image");
 
   if (menuImage.src.endsWith("menu.svg")) {
@@ -55,13 +21,11 @@ function toggleMenu() {
     menuImage.src = "images/menu.svg";
   }
 
-  if (menu.style.maxHeight) {
-    menu.style.maxHeight = null;
-  } else {
-    menu.style.maxHeight = menu.scrollHeight + "px";
-  }
-
+  const menu = document.querySelector(".menu");
   menu.classList.toggle("menu-padding");
+  menu.classList.toggle("active");
+
+  document.querySelector("header").classList.toggle("header-whitebg");
 }
 
 function toggleQuestion(question) {
