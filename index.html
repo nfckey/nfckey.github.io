@@ -128,7 +128,10 @@
     <div class="container">
       <div class="row">
         <div class="subtitle-ca__content">
-          <p class="subtitle-ca__content__title h300-32-medium">Узнайте, что выделяет замки NFCKEY на фоне других компаний в нашей <span class="testimonial__content__text__span">инфографике</span></p>
+          <p class="subtitle-ca__content__title h300-32-medium">
+            Узнайте, что выделяет замки NFCKEY на фоне других компаний в нашей 
+            <a class="subtitle-ca__content__action__button__base__text testimonial__content__text__span" href="/infographics.html">инфографике</a>
+          </p>
           <a href="/infographics.html" class="button-light">
             <p class="button-light__text h50-16-medium" >Перейти на страницу</p>
             <img src="images/arrow-right.svg">
@@ -703,14 +706,18 @@
     <div class="container">
       <div class="row">
         <div class="testimonial__content">
-          <img src="images/ya-v-dele-logo.webp" alt="Логотип конкурса 'Я в деле'" class="testimonial__content__logo">
-          <h3 class="testimonial__content__text h300-32-medium">Наша команда заняла <span class="testimonial__content__text__span">третье место</span> среди всех <br id="test__br">проектов Москвы в треке «инновации» <br id="test__br"><span class="testimonial__content__text__span">крупнейшего</span> в России федерального <br id="test__br">конкурса предпринимателей <br id="test__br-yvd">«Я в деле»</h3>
+          <a class="subtitle-ca__content__action__button__base__text h50-16-medium" href="https://xn--b1aeda3a0j.xn--p1ai/"><img src="images/ya-v-dele-logo.webp" alt="Логотип конкурса 'Я в деле'" class="testimonial__content__logo"></a>
+          <h3 class="testimonial__content__text h300-32-medium">Наша команда заняла 
+            <a id="yvd-pos" class="subtitle-ca__content__action__button__base__text testimonial__content__text__span" href="#swiper">третье место</a> среди всех 
+            <br id="test__br">проектов Москвы в треке «инновации» 
+            <br id="test__br">крупнейшего в России федерального 
+            <br id="test__br">конкурса предпринимателей <br id="test__br-yvd"><a class="subtitle-ca__content__action__button__base__text testimonial__content__text__span" href="https://xn--b1aeda3a0j.xn--p1ai/">«Я в деле»</a></h3>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="container swiper-container">
+  <div id="swiper" class="container swiper-container">
     <div class="swiper imgSwiper swiper-initialized swiper-horizontal swiper-backface-hidden">
       <div class="swiper-wrapper" id="swiper-wrapper-cebf5c5b219ea5d3" aria-live="polite">
         <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 4">
@@ -787,7 +794,7 @@
               </div>
               <div class="form-group">
                 <label for="entry.1184929474" class="form-label para-small-medium">Ник в Telegram</label>
-                <input type="text" name="entry.1184929474" id="entry.1184929474" class="form-input para-small-regular" placeholder="nfckey" />
+                <input type="text" name="entry.1184929474" id="entry.1184929474" class="form-input para-small-regular" placeholder="Например: nfckey" />
               </div>
               <div class="form-group">
                 <label for="entry.1747991083" class="form-label para-small-medium">Комментарий</label>
@@ -1070,6 +1077,10 @@
         },
       },
     });
+
+    document.getElementById('yvd-pos').onclick = function() {
+      swiper2.slideTo(2);
+    }
   </script>
 </body>
 </html>
