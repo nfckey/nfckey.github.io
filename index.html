@@ -1083,14 +1083,14 @@
     }
 
     const heroImage = document.querySelector('.hero__image-container__image');
-    
-    heroImage.onmouseover = function() {
-      this.src = 'images/hero-o100.png';
-    };
 
-    heroImage.onmouseout = function() {
-      this.src = 'images/hero-o50.png';
-    };
+    ['mouseover','touchstart'].forEach(e => 
+      heroImage.addEventListener(e, function() { this.src = 'images/hero-o100.png'; }, true)
+    );
+
+    ['mouseout','touchend'].forEach(e => 
+      heroImage.addEventListener(e, function() { this.src = 'images/hero-o50.png'; }, true)
+    );
   </script>
 </body>
 </html>
