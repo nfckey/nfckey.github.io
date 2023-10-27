@@ -240,6 +240,7 @@ header {
 .hero {
     display: inline-flex;
     padding: 32px 80px;
+    padding-bottom: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -265,7 +266,7 @@ header {
 .hero__column {
     display: flex;
     max-width: 592px;
-    padding: 148px 0;
+    padding: 128px 0;
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
