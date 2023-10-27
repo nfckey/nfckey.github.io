@@ -50,10 +50,10 @@
     }
 
     .menu__wrap-button {
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-start;
-      gap: 8px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 8px;
     }
 
     .hero__gradient {
@@ -65,18 +65,27 @@
         padding: 128px 32px 32px 32px;
     }
 
+    .hero__grid {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr 2fr !important;
+        grid-template-areas:
+            "content"
+            "image" !important;
+    }
+
     .hero__row {
         flex-wrap: wrap;
     }
 
     .hero__column {
+        padding: 0;
         align-items: center;
     }
 
     .hero__heading {
         text-align: center;
     }
-    
+
     .hero__subheading {
         width: 100%;
         max-width: 528px;
@@ -103,14 +112,15 @@
         font-size: 24px;
         font-style: normal;
         font-weight: 500;
-        line-height: 32px; /* 133.333% */
+        line-height: 32px;
+        /* 133.333% */
     }
 
     .subtitle-ca {
         max-width: 640px;
         gap: 16px;
     }
-    
+
     .subtitle-ca__content {
         max-width: 704px;
         gap: 16px;
@@ -119,7 +129,7 @@
     .subtitle-la__content__title {
         text-align: center;
     }
-    
+
     .subtitle-la__content__text {
         text-align: center;
     }
@@ -146,7 +156,7 @@
         flex-basis: calc(50%);
         order: 1;
     }
-    
+
     .cta__column {
         flex-basis: calc(50%);
     }
@@ -157,6 +167,18 @@
 
     .footer__content .column {
         gap: 0px;
+    }
+}
+
+@media screen and (max-width: 655.98px) {
+    .hero__grid {
+        grid-template-rows: 1fr 1.5fr !important;
+    }
+}
+
+@media screen and (max-width: 560.98px) {
+    .hero__grid {
+        grid-template-rows: 1fr 1.3fr !important;
     }
 }
 
@@ -173,7 +195,7 @@
     .container {
         padding: 0px;
     }
-    
+
     .hero__gradient {
         top: 65px;
         left: 50px;
@@ -185,7 +207,7 @@
         border-radius: 157px;
         filter: blur(62px);
     }
-    
+
     .hero__gradient__ellipse2 {
         left: 44px;
         width: 157px;
@@ -193,19 +215,25 @@
         border-radius: 157px;
         filter: blur(62px);
     }
-    
+
     .hero {
         padding: 64px 16px;
     }
-    
+
+    .hero__grid {
+        grid-template-rows: 1fr 1.5fr !important;
+    }
+
     .hero__heading {
-        font-size: 2.5rem; /* 40px */
+        font-size: 2.5rem;
+        /* 40px */
         font-weight: 600;
         line-height: 48px;
     }
 
     .hero__subheading {
-        font-size: 1rem; /* 16px */
+        font-size: 1rem;
+        /* 16px */
         font-weight: 400;
         line-height: 28px;
     }
@@ -216,13 +244,15 @@
     }
 
     .hero-ll__content__title {
-        font-size: 2.5rem; /* 40px */
+        font-size: 2.5rem;
+        /* 40px */
         font-weight: 600;
         line-height: 48px;
     }
 
     .hero-ll__content__text {
-        font-size: 1rem; /* 16px */
+        font-size: 1rem;
+        /* 16px */
         font-weight: 400;
         line-height: 28px;
     }
@@ -232,20 +262,23 @@
     }
 
     .faq__content__question__text {
-        font-size: 1rem; /* 16px */
+        font-size: 1rem;
+        /* 16px */
         font-weight: 500;
         line-height: 28px;
     }
-    
+
     .faq__content__answer {
-        font-size: 0.875rem; /* 14px */
+        font-size: 0.875rem;
+        /* 14px */
         font-weight: 400;
         line-height: 24px;
     }
 
     .testimonial__content__text {
         font-size: 20px;
-        line-height: 24px; /* 120% */
+        line-height: 24px;
+        /* 120% */
     }
 
     .swiper-container {
@@ -267,13 +300,15 @@
         font-size: 32px;
         font-style: normal;
         font-weight: 600;
-        line-height: 40px; /* 125% */
+        line-height: 40px;
+        /* 125% */
     }
 
     .adv-card__content__text,
     .subtitle-ca__content__text,
     .subtitle-la__content__text {
-        font-size: 1rem; /* 16px */
+        font-size: 1rem;
+        /* 16px */
         font-weight: 400;
         line-height: 28px;
     }
