@@ -71,5 +71,6 @@ function onFormSubmitted() {
 function onSupFormSubmitted() {
   document.getElementById('cta-form-sup').classList.remove('cta__form');
   document.getElementById('cta-form-sup').classList.add('d-none');
+  document.getElementById('supFormTitle').innerHTML = 'Спасибо за ваш отзыв!';
   document.getElementById('supFormText').innerHTML = 'Мы будем держать вас в курсе событий';
 }
