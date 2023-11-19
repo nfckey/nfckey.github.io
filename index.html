@@ -114,10 +114,16 @@
               <p class="hero__subheading para-medium-regular">Дверные замки с технологией NFC. Доступ без усилий
                 <br id="test__br">и с полным контролем – новый уровень комфорта и безопасности вашего дома</p>
             </div>
-            <a href="#cta" class="hero__button button-glow">
-              <p class="hero__button__text h100-20-semibold">Будьте в числе первых</p>
-              <img src="images/arrow-right-white.svg">
-            </a>
+            <div class="hero__button-group">
+              <a href="#cta" class="hero__button button-glow">
+                <p class="hero__button__text h100-20-semibold">Будьте в числе первых</p>
+                <img src="images/arrow-right-white.svg">
+              </a>
+              <a href="#notifications" class="hero__button-secondary">
+                <p class="hero__button-secondary__text h50-16-medium">Получите уведомление <br>о выходе на рынок</p>
+                <img src="images/mail.svg">
+              </a>
+            </div>
           </div>
           <div class="hero__image-container"></div>
         </div>
@@ -134,7 +140,7 @@
             <a class="subtitle-ca__content__action__button__base__text testimonial__content__text__span" href="/infographics.html">инфографике</a>
           </p>
           <a href="/infographics.html" class="button-light">
-            <p class="button-light__text h50-16-medium" >Перейти на страницу</p>
+            <p class="button-light__text h50-16-medium">Перейти на страницу</p>
             <img src="images/arrow-right.svg">
           </a>
         </div>
@@ -259,8 +265,17 @@
                 <img src="images/sparkles.svg">
               </div>
               <div class="features__feature__content">
+                <p class="features__feature__content__title para-medium-medium">Удобное мобильное приложение</p>
+                <p class="features__feature__content__text para-small-regular">Наше интуитивно понятное мобильное приложение создано для беспрепятственного управления доступом и множеством других функций вашего замка</p>
+              </div>
+            </div>
+            <div class="features__feature">
+              <div class="features__feature__icon">
+                <img src="images/sparkles.svg">
+              </div>
+              <div class="features__feature__content">
                 <p class="features__feature__content__title para-medium-medium">Открытие дверей без интернета</p>
-                <p class="features__feature__content__text para-small-regular">Интуитивно понятное приложение для беспрепятственного управления замками и доступом позволит открывать двери без необходимости подключения к интернету</p>
+                <p class="features__feature__content__text para-small-regular">Вы можете открывать двери без подключения к интернету, получая бесперебойный доступ при любых ситуациях</p>
               </div>
             </div>
             <div class="features__feature">
@@ -268,19 +283,11 @@
                 <img src="images/sparkles.svg">
               </div>
               <div class="features__feature__content">
-                <p class="features__feature__content__title para-medium-medium">Эффективность работы от аккумулятора</p>
-                <p class="features__feature__content__text para-small-regular">Длительное время работы от аккумулятора позволяет долгое время не беспокоиться о его замене</p>
+                <p class="features__feature__content__title para-medium-medium">Эффективность и элегантность</p>
+                <p class="features__feature__content__text para-small-regular">Наш умный замок сочетает в себе длительное время работы от батареек и утонченный дизайн, позволяющий придать вашей двери современный шарм</p>
               </div>
             </div>
-            <div class="features__feature">
-              <div class="features__feature__icon">
-                <img src="images/sparkles.svg">
-              </div>
-              <div class="features__feature__content">
-                <p class="features__feature__content__title para-medium-medium">Элегантный дизайн</p>
-                <p class="features__feature__content__text para-small-regular">Придайте своей двери современный шарм с помощью стильного и утонченного дизайна дверного замка</p>
-              </div>
-            </div>
+
           </div>
         </div>
         <div class="features__image-container">
@@ -479,6 +486,26 @@
             <a href="#cta" class="button-md button-gold">
               <p class="button-md__text h50-16-medium">Оставить заявку</p>
             </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="notifications">
+    <div class="container">
+      <div class="row">
+        <div class="notifications__content">
+          <p class="notifications__content__text h300-32-medium"><span class="notifications__content__text-span">Будьте в курсе событий – </span><br>получите уведомление при <br>выходе нашего замка на рынок</p>
+          <form id="notifications-form" class="notifications__form" method="post" target="hiddenEmailConfirm" onsubmit="onEmailFormSubmitted()" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfkyVd5b4apR-VvFZgwv1nYldZfW-QPz4pXevyZr4IuqdNLpA/formResponse?embedded=true">
+            <div class="form-group">
+              <input type="email" name="entry.603433018" id="entry.603433018" class="notifications__form-input h25-14-medium" placeholder="Введите ваш email" 
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required />
+            </div> 
+            <button type="submit" class="notifications__form-button h50-16-medium">Подписаться</button>
+          </form>
+          <div class="d-none" id="emailConfirm">
+            <iframe name="hiddenEmailConfirm" id="hiddenEmailConfirm" class="d-none"></iframe>
           </div>
         </div>
       </div>
@@ -724,11 +751,11 @@
       <div class="row">
         <div class="testimonial__content">
           <a class="subtitle-ca__content__action__button__base__text h50-16-medium" href="https://xn--b1aeda3a0j.xn--p1ai/"><img src="images/ya-v-dele-logo.webp" alt="Логотип конкурса 'Я в деле'" class="testimonial__content__logo"></a>
-          <h3 class="testimonial__content__text h300-32-medium">Наша команда заняла 
+          <h3 class="testimonial__content__text h300-32-medium">Наша команда разрабатывает <span class="testimonial__content__text__span">полностью российский продукт</span> и заняла 
             <a id="yvd-pos" class="subtitle-ca__content__action__button__base__text testimonial__content__text__span" href="#swiper">третье место</a> среди всех 
-            <br id="test__br">проектов Москвы в треке «инновации» 
-            <br id="test__br">крупнейшего в России федерального 
-            <br id="test__br">конкурса предпринимателей <br id="test__br-yvd"><a class="subtitle-ca__content__action__button__base__text testimonial__content__text__span" href="https://xn--b1aeda3a0j.xn--p1ai/">«Я в деле»</a></h3>
+            проектов Москвы в треке «инновации» 
+            крупнейшего федерального 
+            конкурса предпринимателей <br id="test__br-yvd"><a class="subtitle-ca__content__action__button__base__text testimonial__content__text__span" href="https://xn--b1aeda3a0j.xn--p1ai/">«Я в деле»</a></h3>
         </div>
       </div>
     </div>
@@ -798,25 +825,17 @@
           <form class="cta__form" id="cta-form" method="post" target="hiddenConfirm" onsubmit="onFormSubmitted()" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfkyVd5b4apR-VvFZgwv1nYldZfW-QPz4pXevyZr4IuqdNLpA/formResponse?embedded=true">
             <div class="cta__column">
               <div class="form-group">
-                <label for="entry.943275183" class="form-label para-small-medium">Имя <span style="color: red;">*</span></label>
+                <label for="entry.943275183" class="form-label para-small-medium">Имя</label>
                 <input type="text" name="entry.943275183" id="entry.943275183" class="form-input para-small-regular" placeholder="Иван Иванов" required />
               </div>
               <div class="form-group">
-                <label for="entry.603433018" class="form-label para-small-medium">Email <span style="color: red;">*</span></label>
+                <label for="entry.603433018" class="form-label para-small-medium">Email</label>
                 <input type="email" name="entry.603433018" id="entry.603433018" class="form-input para-small-regular" placeholder="ivan.ivanov@gmail.com" 
                 pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required />
               </div>
               <div class="form-group">
                 <label for="entry.1382780879" class="form-label para-small-medium">Телефон</label>
                 <input type="tel" name="entry.1382780879" id="entry.1382780879" class="form-input para-small-regular" placeholder="+7 (968) 740-12-34" />
-              </div>
-              <div class="form-group">
-                <label for="entry.1184929474" class="form-label para-small-medium">Ник в Telegram</label>
-                <input type="text" name="entry.1184929474" id="entry.1184929474" class="form-input para-small-regular" placeholder="Например: nfckey" />
-              </div>
-              <div class="form-group">
-                <label for="entry.1747991083" class="form-label para-small-medium">Комментарий</label>
-                <textarea name="entry.1747991083" id="entry.1747991083" cols="30" rows="4" class="form-input form-textarea para-small-regular" placeholder="Поделитесь своими вопросами или предпочтениями"></textarea>
               </div>
               <button type="submit" class="form-button button-glow h50-16-medium">Отправить</button>
             </div>

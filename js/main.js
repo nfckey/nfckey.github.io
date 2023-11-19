@@ -61,6 +61,13 @@ function enableSmoothScrolling() {
   });
 }
 
+function onEmailFormSubmitted() {
+  document.getElementById('notifications-form').classList.remove('notifications__form');
+  document.getElementById('notifications-form').classList.add('d-none');
+  document.querySelector('.notifications__content__text').innerHTML = '<span class="notifications__content__text-span ws-none">Спасибо за проявленный интерес!</span><br> Мы уведомим вас заранее при <br>выходе нашего замка на рынок';
+  document.querySelector('.notifications__content__text').classList.add('text-center');
+}
+
 function onFormSubmitted() {
   document.getElementById('confirm').classList.remove('d-none');
   document.getElementById('confirm').classList.add('cta__column');
