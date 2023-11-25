@@ -154,6 +154,14 @@
 
 /* Media query for screens smaller than 954px */
 @media screen and (max-width: 953.98px) {
+    .ops-card {
+        flex-direction: column;
+    }
+
+    .ops-card__content__title {
+        max-width: 612px;
+    }
+
     .faq-row-g90 {
         flex-wrap: wrap;
     }
@@ -188,6 +196,12 @@
 
     .adv_nth .advantage-column:nth-child(n+4) {
         display: none;
+    }
+
+    .ops-card__content__bullet-points {
+        flex-direction: column;
+        align-items: start;
+        align-self: center;
     }
 
     .cta__form {
@@ -321,6 +335,10 @@
 
     .advantage-column {
         padding: 16px 0;
+    }
+
+    .ops-card {
+        padding: 24px 12px;
     }
 
     .notifications__form {

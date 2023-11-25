@@ -629,6 +629,78 @@ header {
     gap: 16px !important;
 }
 
+.g-64 {
+    gap: 64px !important;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.ops-card {
+    max-width: 892px;
+    display: flex;
+    padding: 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid var(--neutral-1300, #F1F1F2);
+    border-radius: 16px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 1px 2px 0px rgba(205, 205, 205, 0.25);
+}
+
+.ops-card__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.ops-card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    flex: 1 0 0;
+}
+
+.ops-card__content__title {
+    align-self: center;
+    color: var(--neutral-50, #121417);
+    text-align: center;
+}
+
+.ops-card__content__title-span {
+    color: var(--pri-teal-400, #66C3D0);
+}
+
+.ops-card__content__bullet-points {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 16px 32px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.ops-card__content__bullet-points__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.sub-cards-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
 .sub-card {
     display: flex;
     width: 292px;
@@ -779,7 +851,6 @@ header {
     display: flex;
     align-items: flex-start;
     gap: 6px;
-    align-self: stretch;
 }
 
 .bullet-points__item__icon {
