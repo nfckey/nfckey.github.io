@@ -622,11 +622,41 @@ header {
 }
 
 /* ---------------------------------------- */
+/*               How it works               */
+/* ---------------------------------------- */
+
+.hiw-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.hiw-content__title {
+    width: 496px;
+}
+
+.hiw-video-container {
+    
+}
+
+.hiw-video-container__video {
+    width: 100%;
+    height: auto;
+    border-radius: 32px;
+    max-width: 708px;
+}
+
+/* ---------------------------------------- */
 /*               Subscription               */
 /* ---------------------------------------- */
 
 .g-16 {
     gap: 16px !important;
+}
+
+.g-32 {
+    gap: 32px !important;
 }
 
 .g-64 {
@@ -635,6 +665,63 @@ header {
 
 .flex-column {
     flex-direction: column;
+}
+
+#price-title__br {
+    display: none;
+}
+
+.price-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.price-img-container__img {
+    max-width: 80%;
+    height: auto;
+}
+
+.price-container {
+    display: flex;
+    padding-top: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.price-container__price-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.price-container__price-row__price {
+    color: var(--neutral-50, #121417);
+    text-align: center;
+    line-height: 72px;
+}
+
+.price-container__price-row__star {
+    color: var(--neutral-50, #121417);
+    text-align: center;
+}
+
+.ops-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.price-clarification {
+    color: var(--Neutral-400, #5A6475);
+    text-align: center;
 }
 
 .ops-card {
@@ -648,6 +735,10 @@ header {
     border-radius: 16px;
     background: var(--white, #FFF);
     box-shadow: 0px 1px 2px 0px rgba(205, 205, 205, 0.25);
+}
+
+.ops-card-index {
+    max-width: 654px;
 }
 
 .ops-card__img {
@@ -1285,7 +1376,6 @@ tbody td {
 
 .testimonial__content {
     display: flex;
-    max-width: 824px;
     flex-direction: column;
     align-items: center;
     gap: 32px;
@@ -1304,6 +1394,45 @@ tbody td {
 
 .testimonial__content__text__span {
     color: var(--pri-teal-400);
+}
+
+.testimonial__media-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.testimonial__media-row__media {
+    width: 320px;
+    height: 200px;
+    border-radius: 16px;
+}
+
+.testimonial__media-row__media:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s;
+}
+
+.testimonial__media-row .habr {
+    background: url(../images/habr_out.webp) no-repeat, #629fbc;
+    background-size: contain;
+}
+
+.testimonial__media-row .vc {
+    background: url(../images/vc_out.webp) no-repeat, #FEEBEF;
+    background-size: contain;
+}
+
+.testimonial__media-row .tenchat {
+    background: url(../images/tenchat_out.webp) no-repeat, #1D1F33;
+    background-size: contain;
+}
+
+.testimonial__media-row .telegram {
+    background: url(../images/telegram_out.webp) no-repeat, #34AADF;
+    background-size: contain;
 }
 
 .zoomable {
@@ -1406,9 +1535,15 @@ tbody td {
 /*                    CTA                   */
 /* ---------------------------------------- */
 
+.cta-subtitle {
+    align-self: stretch;
+    color: var(--neutral-50);
+    text-align: center;
+}
+
 .cta__form {
     display: flex;
-    width: calc(50% - 16px);
+    min-width: 428px;
     justify-content: center;
     align-items: flex-start;
     align-self: stretch;
@@ -1557,7 +1692,9 @@ tbody td {
     color: var(--neutral-200);
 }
 
-
+.form-optional {
+    color: var(--neutral-600, #9CA2AC);
+}
 
 /* ---------------------------------------- */
 /*                  FOOTER                  */
