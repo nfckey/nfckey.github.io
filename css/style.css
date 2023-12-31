@@ -486,6 +486,10 @@ header {
     text-align: center;
 }
 
+#priorities .advantage-column__content__text {
+    max-width: 352px;
+}
+
 .icon-big {
     display: flex;
     padding: 16px;
@@ -634,10 +638,6 @@ header {
 
 .hiw-content__title {
     width: 496px;
-}
-
-.hiw-video-container {
-    
 }
 
 .hiw-video-container__video {
@@ -1283,11 +1283,31 @@ tbody td {
 /*                   TEAM                   */
 /* ---------------------------------------- */
 
+#team .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 96px;
+}
+
 .team__column {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 64px;
+}
+
+.team__content {
+    display: flex;
+    max-width: 824px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.team__content p {
+    text-align: center;
 }
 
 .team__avatar {
@@ -1387,6 +1407,7 @@ tbody td {
 }
 
 .testimonial__content__text {
+    max-width: 988px;
     align-self: stretch;
     color: var(--neutral-100);
     text-align: center;
