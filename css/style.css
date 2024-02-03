@@ -1291,10 +1291,18 @@ tbody td {
     gap: 96px;
 }
 
+.team__row {
+    max-width: 960px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+
 .team__column {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     gap: 64px;
 }
 
@@ -1306,7 +1314,7 @@ tbody td {
     gap: 32px;
 }
 
-.team__content p {
+.team__content-para {
     text-align: center;
 }
 
